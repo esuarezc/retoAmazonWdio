@@ -3,21 +3,24 @@ import { expect, $ } from '@wdio/globals'
 
 import LoginPage from '../userinterface/login.page';
 import Page from '../userinterface/page';
+import { RegistroTask } from '../tasks/RegistroTask';
+import { Assertions } from '../questions/Assertions';
+
+const registroTask = new RegistroTask();
+const assertion = new Assertions();
 
 const pages = {
     login: LoginPage
 }
 
-Given(/^I am on the page$/, async () => {
-    await LoginPage.open()
+Given("que el usuario ingresa al login", async () => {
+    await LoginPage.open() 
 });
 
-When(/^I login with (\w+) and (.+)$/, async (username, password) => {
-    //await LoginPage.login(username, password)
+When("se registra con sus datos {string} {string} {string}", async (name, phoneNumber, password) => {
+    await registroTask.crearCuenta(name, phoneNumber, password)
 });
 
-Then(/^I should see a flash message saying (.*)$/, async (message) => {
-    //await expect(SecurePage.flashAlert).toBeExisting();
-    //await expect(SecurePage.flashAlert).toHaveTextContaining(message);
+Then("vera el mensaje {string}", async (message) => {
+    await assertion.validateText(message);
 });
-

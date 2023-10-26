@@ -1,12 +1,8 @@
 Feature: The Internet Guinea Pig Website
 
-  Scenario Outline: As a user, I can log into the secure area
-
-    Given I am on the page
-    #When I login with <username> and <password>
-    #Then I should see a flash message saying <message>
-
-    Examples:
-      | username | password             | message                        |
-      | tomsmith | SuperSecretPassword! | You logged into a secure area! |
-      | foobar   | barfoo               | Your username is invalid!      |
+  Scenario Outline: El usuario crea una cuenta en Amazon
+    Given que el usuario ingresa al login
+    When se registra con sus datos "Tatiana" "3100000000" "prueba1*"
+    Then vera el mensaje "Resuelve esta comprobación para proteger tu cuenta"
+    
+    
