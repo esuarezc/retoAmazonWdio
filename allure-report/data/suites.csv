@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Nov 01 18:19:20 COT 2023","Wed Nov 01 18:19:20 COT 2023","5","","The Internet Guinea Pig Website: El usuario crea una cuenta en Amazon","","","","",""
-"passed","Wed Nov 01 18:19:16 COT 2023","Wed Nov 01 18:19:20 COT 2023","3873","","The Internet Guinea Pig Website: El usuario crea una cuenta en Amazon","","","","When se registra con sus datos ""Tatiana"" ""3100000000"" ""prueba1*""",""
-"passed","Wed Nov 01 18:19:14 COT 2023","Wed Nov 01 18:19:16 COT 2023","2497","","The Internet Guinea Pig Website: El usuario crea una cuenta en Amazon","","","","Given que el usuario ingresa al login",""
-"passed","Wed Nov 01 18:19:20 COT 2023","Wed Nov 01 18:19:20 COT 2023","43","","The Internet Guinea Pig Website: El usuario crea una cuenta en Amazon","","","","Then vera la pagina de validacion de identidad ""Confirma tu identidad""",""
