@@ -5,7 +5,8 @@ import { LoginPage } from '../userinterface/login.page';
 export class Assertions extends LoginPage{
 
     public async validateText(msn:string){
-        await expect(msn).to.equal((await this.registerMessage).getText)
+        //console.log(this.registerMessage.getText())
+        await expect(msn).to.equal(await browser.getTitle())
     }
     
 

@@ -10,8 +10,7 @@ export class RegistroTask extends LoginPage {
         await this.registerNumber.setValue(numberPhone);
         await this.registerPassword.setValue(password);
         await this.registerPasswordCheck.setValue(password);
-        (await this.btnContinue).moveTo();
-        await this.btnContinue.click;
+        await this.btnContinue.click();
 }
 
 

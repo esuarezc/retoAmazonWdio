@@ -21,6 +21,6 @@ When("se registra con sus datos {string} {string} {string}", async (name, phoneN
     await registroTask.crearCuenta(name, phoneNumber, password)
 });
 
-Then("vera el mensaje {string}", async (message) => {
+Then("vera la pagina de validacion de identidad {string}", async (message) => {
     await assertion.validateText(message);
 });

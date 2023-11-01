@@ -29,7 +29,7 @@ export class LoginPage extends Page {
     }
 
     public get registerMessage () {
-        return $("//*[@id='aacb-captcha-header']");
+        return $("//*[@class='a-icon a-icon-logo']");
     }
     /**
      * a method to encapsule automation code to interact with the page
