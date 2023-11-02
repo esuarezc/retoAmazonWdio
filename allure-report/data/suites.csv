@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Nov 01 19:56:51 COT 2023","Wed Nov 01 19:56:52 COT 2023","16","","The Internet Guinea Pig Website: prueba API","","","","When crea un nuevo post",""
+"passed","Wed Nov 01 19:56:10 COT 2023","Wed Nov 01 19:56:13 COT 2023","2868","","The Internet Guinea Pig Website: El usuario crea una cuenta en Amazon","","","","Given que el usuario ingresa al login",""
+"passed","Wed Nov 01 19:56:17 COT 2023","Wed Nov 01 19:56:37 COT 2023","20059","","The Internet Guinea Pig Website: El usuario crea una cuenta en Amazon","","","","Then vera la pagina de validacion de identidad ""Confirma tu identidad""",""
+"passed","Wed Nov 01 19:56:37 COT 2023","Wed Nov 01 19:56:51 COT 2023","14754","","The Internet Guinea Pig Website: prueba API","","","","Given que el usuario consulta la informacion",""
+"passed","Wed Nov 01 19:56:37 COT 2023","Wed Nov 01 19:56:37 COT 2023","13","","The Internet Guinea Pig Website: El usuario crea una cuenta en Amazon","","","","",""
+"passed","Wed Nov 01 19:56:13 COT 2023","Wed Nov 01 19:56:17 COT 2023","4010","","The Internet Guinea Pig Website: El usuario crea una cuenta en Amazon","","","","When se registra con sus datos ""Tatiana"" ""3100000000"" ""prueba1*""",""
+"passed","Wed Nov 01 19:56:52 COT 2023","Wed Nov 01 19:56:52 COT 2023","8","","The Internet Guinea Pig Website: prueba API","","","","",""

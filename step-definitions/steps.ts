@@ -24,3 +24,13 @@ When("se registra con sus datos {string} {string} {string}", async (name, phoneN
 Then("vera la pagina de validacion de identidad {string}", async (message) => {
     await assertion.validateText(message);
 });
+
+Given("que el usuario consulta la informacion", async () => {
+    let response = await registroTask.getResult();
+
+});
+
+When("crea un nuevo post", async () => {
+    let response = await registroTask.crearPost();
+    
+});
