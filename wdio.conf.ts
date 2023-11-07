@@ -31,7 +31,7 @@ export const config: Options.Testrunner = {
   framework: 'cucumber',
   reporters: ['spec', '@wdio/allure-reporter'],
   cucumberOpts: {
-    require: ['./step-definitions/steps.ts'],
+    require: ['./step-definitions/**/*.ts'],
     backtrace: false,
     requireModule: [],
     dryRun: false,

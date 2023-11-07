@@ -13,14 +13,14 @@ const pages = {
     login: LoginPage
 }
 
-Given("que el usuario ingresa al login", async () => {
+Given("que el usuario ingreso a la pagina de registro de Amazon", async () => {
     await LoginPage.open() 
 });
 
-When("se registra con sus datos {string} {string} {string}", async (name, phoneNumber, password) => {
-    await registroTask.crearCuenta(name, phoneNumber, password)
+When("se registra con sus datos personales", async () => {
+    await registroTask.crearCuenta()
 });
 
-Then("vera la pagina de validacion de identidad {string}", async (message) => {
-    await assertion.validateText(message);
+Then("vera la pagina de validacion de identidad", async () => {
+    await assertion.validateText("Confirma tu identidad");
 });

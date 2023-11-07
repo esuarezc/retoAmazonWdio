@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
     "@types/chai": "^4.3.9",
     "@wdio/allure-reporter": "^8.20.0",
     "@wdio/cli": "^8.16.20",
