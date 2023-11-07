@@ -1,10 +1,10 @@
 import { $ } from '@wdio/globals'
-import Page from './page';
+import Page from './Page';
 
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-export class LoginPage extends Page {
+export class RegisterPage extends Page {
     /**
      * define selectors using getter methods
      */
@@ -45,4 +45,4 @@ export class LoginPage extends Page {
     }
 }
 
-export default new LoginPage();
+export default new RegisterPage();

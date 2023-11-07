@@ -1,12 +1,11 @@
 import {expect as assert} from 'chai';
 import {expect} from 'chai';
-import { LoginPage } from '../userinterface/login.page';
+import { RegisterPage } from '../userinterface/RegisterPage';
 
-export class Assertions extends LoginPage{
+export class Assertions extends RegisterPage{
 
-    public async validateText(msn:string){
-        await expect(msn).to.equal(await browser.getTitle())
+    public async validateMessage(expecteMsn:string, obtainedMsn:string){
+        await expect(expecteMsn).to.equal(obtainedMsn)
     }
     
-
 }
