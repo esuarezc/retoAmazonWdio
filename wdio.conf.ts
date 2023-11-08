@@ -39,7 +39,7 @@ export const config: Options.Testrunner = {
     snippets: true,
     source: true,
     strict: false,
-    tagExpression: '@login',
+    tagExpression: '@cantidadproductos',
     timeout: 180000,
     ignoreUndefinedDefinitions: false,
   },

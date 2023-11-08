@@ -26,7 +26,7 @@ When("inicia sesion con los datos correspondientes", async () => {
 });
 
 Then("visualizara el saludo personalizado de Amazon", async () => {
-    let obtainedText = loginTask.getText();
+    let obtainedText = await loginTask.getText();
     await assertion.validateMessage("Hola Tatiana", await obtainedText);
 });
 

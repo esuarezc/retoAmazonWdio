@@ -25,10 +25,9 @@ export class LoginPage extends Page {
     }
 
     public get regard () {
-        return $("//*[@id='nav-line-1 nav-progressive-content']");
+        return $("//*[contains(text(),'Hola')]");
     }
 
-    
 }
 
 export default new LoginPage();

@@ -25,7 +25,7 @@ export class HomePage extends Page {
     }
 
     public get buyAgainOption () {
-        return $("//*[@class='nav-a  '][2]");
+        return $("//*[contains(text(),'Comprar de Nuevo')]");
     }
 
     
