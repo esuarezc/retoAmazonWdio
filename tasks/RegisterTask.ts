@@ -1,6 +1,7 @@
 import { waitForClickable } from "webdriverio/build/commands/element";
 import {RegisterPage} from "../userinterface/RegisterPage";
 import { faker } from "@faker-js/faker";
+import { browser } from '@wdio/globals'
 
 export class RegisterTask extends RegisterPage {
 

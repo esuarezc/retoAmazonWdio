@@ -1,4 +1,5 @@
 import type { Options } from '@wdio/types';
+import { browser } from '@wdio/globals'
 
 export const config: Options.Testrunner = {
   runner: 'local',
@@ -42,7 +43,7 @@ export const config: Options.Testrunner = {
     snippets: true,
     source: true,
     strict: false,
-    tagExpression: '@debug',
+    tags: '@api',
     timeout: 60000,
     ignoreUndefinedDefinitions: false,
   },
@@ -53,6 +54,7 @@ export const config: Options.Testrunner = {
       browser.takeScreenshot(); // Captura una captura de pantalla en caso de error
     }
   },
+
   onComplete() {
     // Genera informes Allure después de la ejecución
     const allure = require('allure-commandline');
