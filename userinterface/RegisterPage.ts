@@ -31,6 +31,10 @@ export class RegisterPage extends Page {
     public get registerMessage () {
         return $("//*[@class='a-icon a-icon-logo']");
     }
+
+    public get errorContainer () {
+        return $$("//*[contains(text(),'Se requiere')]");
+    }
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
@@ -46,3 +50,7 @@ export class RegisterPage extends Page {
 }
 
 export default new RegisterPage();
+function $$(arg0: string) {
+    throw new Error('Function not implemented.');
+}
+

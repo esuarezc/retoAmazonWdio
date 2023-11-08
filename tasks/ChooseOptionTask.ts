@@ -7,6 +7,6 @@ export class ChooseOptionTask extends HomePage {
             await this.amazonLog.click()
         }
         await this.homeOption.click();
-}
+    }
 
 }

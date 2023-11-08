@@ -1,13 +1,9 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
-import { expect, $ } from '@wdio/globals'
-
-import LoginPage from '../userinterface/RegisterPage';
-import Page from '../userinterface/Page';
 import { RegisterTask } from '../tasks/RegisterTask';
 import { Assertions } from '../questions/Assertions';
 import {HomePage} from '../userinterface/HomePage';
 import {ChooseOptionTask} from '../tasks/ChooseOptionTask';
-import RegisterPage from '../userinterface/RegisterPage';
+import { $$ } from 'webdriverio/build/commands/browser';
 
 const registerTask = new RegisterTask();
 const assertion = new Assertions();
@@ -20,12 +16,20 @@ Given("que el usuario ingreso a la pagina de registro de Amazon", async () => {
 });
 
 When("se registra con sus datos personales", async () => {
-    await registerTask.crearCuenta()
+    await registerTask.createAccount()
 });
 
 Then("vera la pagina de validacion de identidad", async () => {
-    const obtainedMsn = registerTask.getTitle();
+    const obtainedMsn = await registerTask.getTitle();
     await assertion.validateMessage("Confirma tu identidad", obtainedMsn);
+});
+
+When(/^se registra con una contraseña (.*)$/, async (errorType) => {
+    await registerTask.createWrongAccount(errorType)
+});
+
+Then("no podra avanzar a la pagina de validacion de identidad", async () => {
+    await assertion.validateTitlePage("Registro de Amazon")
 });
 
 function Y(arg0: string, arg1: () => Promise<void>) {
