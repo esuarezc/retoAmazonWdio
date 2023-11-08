@@ -39,8 +39,8 @@ export const config: Options.Testrunner = {
     snippets: true,
     source: true,
     strict: false,
-    tagExpression: '@debug',
-    timeout: 60000,
+    tagExpression: '@login',
+    timeout: 180000,
     ignoreUndefinedDefinitions: false,
   },
 

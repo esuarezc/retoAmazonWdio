@@ -8,6 +8,11 @@ export class BuyAgainPage extends Page {
     /**
      * define selectors using getter methods
      */
+    
+    public get addToCartButtonList() {
+        return browser.$$("//*[@name='submit.addToCart']");
+    }
+    
     public get addToCartButton1 () {
         return $("(//*[@name='submit.addToCart'])[1]");
     }
@@ -22,6 +27,14 @@ export class BuyAgainPage extends Page {
 
     public get CartButton () {
         return $("//*[@id='nav-cart']");
+    }
+
+    public get productsNumber () {
+        return $("//*[@id='nav-cart-count']");
+    }
+
+    public get deleteBtnList() {
+        return browser.$$("//*[@title='Eliminar']");
     }
     
 }

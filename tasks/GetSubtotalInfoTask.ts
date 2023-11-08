@@ -15,9 +15,10 @@ export class GetSubtotalInfoTask extends CartPage {
     public async calculateSubTotal (){
         let priceProduct1 = await this.price1.getText();
         let priceProduct2 = await this.price2.getText();
-        //let priceProduct3 = await this.price3.getText();
-        let calculateSubTotal = parseFloat(priceProduct1.substring(3, priceProduct1.length+1)) + parseFloat(priceProduct2.substring(3, priceProduct2.length+1));
-        return calculateSubTotal;
+        let priceProduct3 = await this.price3.getText();
+        let calculateSubTotal = parseFloat(priceProduct1.substring(3, priceProduct1.length+1)) + parseFloat(priceProduct2.substring(3, priceProduct2.length+1))
+        + parseFloat(priceProduct3.substring(3, priceProduct2.length+1));
+        return calculateSubTotal.toFixed(2);
     }
 
 

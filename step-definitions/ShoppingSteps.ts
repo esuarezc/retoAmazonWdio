@@ -24,7 +24,7 @@ const getSubtotalInfoTask = new GetSubtotalInfoTask();
 Given("que el usuario agrego productos a su carrito de compras", async () => {
     await homePage.open();
     await chooseOptionTask.selectListOptions() 
-    browser.pause(8000);
+    await browser.pause(8000);
     await loginTask.logIn();
     await chooseOptionTask.selectBuyAgainOption();
     await shoppingTaks.addProducts();

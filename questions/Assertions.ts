@@ -19,11 +19,11 @@ export class Assertions extends RegisterPage{
     
     public async validateProductsAmount(obtainedAmount:string){
         var amount = await parseInt(obtainedAmount)
-        await expect(amount).to.be.above(2)
+        await expect(amount).to.be.equal(3)
     }
 
-    public async validateSubtotal(obtainedSubtotal:string, calculateSubTotal:Number){
+    public async validateSubtotal(obtainedSubtotal:string, calculateSubTotal:string){
         var subTotal = await parseFloat(obtainedSubtotal)
-        await expect(calculateSubTotal).to.equal(subTotal)
+        await expect(calculateSubTotal.toString()).to.equal(subTotal.toString())
     }
 }
