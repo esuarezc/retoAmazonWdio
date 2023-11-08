@@ -24,6 +24,10 @@ export class HomePage extends Page {
         return $("//*[@id='nav-logo-sprites']");
     }
 
+    public get buyAgainOption () {
+        return $("//*[@class='nav-a  '][2]");
+    }
+
     
 }
 

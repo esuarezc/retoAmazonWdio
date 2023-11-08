@@ -8,4 +8,13 @@ export class Assertions extends RegisterPage{
         await expect(expecteMsn).to.equal(obtainedMsn)
     }
     
+    public async validateProductsAmount(obtainedAmount:string){
+        var amount = await parseInt(obtainedAmount)
+        await expect(amount).to.be.above(2)
+    }
+
+    public async validateSubtotal(obtainedSubtotal:string, calculateSubTotal:Number){
+        var subTotal = await parseFloat(obtainedSubtotal)
+        await expect(calculateSubTotal).to.equal(subTotal)
+    }
 }
