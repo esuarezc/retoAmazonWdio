@@ -8,6 +8,7 @@ export class ChooseOptionTask extends HomePage {
         }
         await this.homeOption.click();
     }
+    }
 
     public async selectBuyAgainOption (){
         await this.buyAgainOption.click();
